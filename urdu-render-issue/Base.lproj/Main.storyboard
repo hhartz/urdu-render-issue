@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoNastaliqUrdu-Regular.ttf">
+            <string>NotoNastaliqUrdu</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="دل کے خوش رکھنے کو غالب یہ خیال اچّھا ہے" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-dq-PsX">
+                                <rect key="frame" x="16" y="0.0" width="288" height="160"/>
+                                <fontDescription key="fontDescription" name="NotoNastaliqUrdu" family="Noto Nastaliq Urdu" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsF-x7-sHm">
+                                <rect key="frame" x="16" y="160" width="288" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jsF-x7-sHm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CIE-OU-MPL"/>
+                            <constraint firstItem="XcS-dq-PsX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GcL-ct-XJW"/>
+                            <constraint firstItem="XcS-dq-PsX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="IgC-VA-XFU"/>
+                            <constraint firstItem="jsF-x7-sHm" firstAttribute="top" secondItem="XcS-dq-PsX" secondAttribute="bottom" id="Iwc-iv-HLw"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jsF-x7-sHm" secondAttribute="bottom" id="UWM-Am-lTM"/>
+                            <constraint firstItem="XcS-dq-PsX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.333" id="YXG-ER-r6f"/>
+                            <constraint firstItem="XcS-dq-PsX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="bOS-i8-LqI"/>
+                            <constraint firstItem="XcS-dq-PsX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iux-pc-bnh"/>
+                            <constraint firstItem="jsF-x7-sHm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="koE-ed-61f"/>
+                            <constraint firstItem="jsF-x7-sHm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="qu0-c0-sIU"/>
+                            <constraint firstItem="jsF-x7-sHm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="wBh-V6-7kU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IgC-VA-XFU"/>
+                                <exclude reference="CIE-OU-MPL"/>
+                                <exclude reference="wBh-V6-7kU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="webContainer" destination="jsF-x7-sHm" id="9jX-nm-xW8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
